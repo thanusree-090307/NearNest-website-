@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body{
+    margin:0;
+    background:#d9e2ef;
+}
+
+
+.top{
+    width:600px;
+    margin:25px auto;
+    padding:15px;
+    text-align:center;
+    background:white;
+    border-radius:30px;
+    font-size:26px;
+    font-weight:bold;
+    box-shadow:0 4px 10px rgba(0,0,0,0.08);
+}
+
+
+.mid{
+    width:800px;
+    margin:20px auto;
+    background:white;
+    border-radius:20px;
+    padding:25px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 6px 14px rgba(0,0,0,0.08);
+    transition: 0.2s;
+}
+
+.mid:hover{
+    transform:translateY(-3px) ;
+    box-shadow:0 10px 20px rgba(0,0,0,0.12);
+}
+
+.details p{
+    margin:5px 0;
+}
+
+
+.actions{
+    display:flex;
+    gap:15px;
+}
+
+
+.navigate{
+    background:linear-gradient(135deg,#6c6cf0,#4a4af0);
+    color:white;
+    border:none;
+    border-radius:25px;
+    padding:10px 20px;
+    cursor:pointer;
+}
+
+.navigate:hover{
+    background:#4a4af0;
+}
+
+
+.call{
+    background:#d7f3d7;
+    color:#1d7a1d;
+    border:none;
+    border-radius:25px;
+    padding:10px 20px;
+    cursor:pointer;
+}
+
+.call:hover{
+    background:#b8e6b8;
+}
+
+
+.edit{
+    background:#4a4af0;
+    color:white;
+    border:none;
+    border-radius:25px;
+    padding:10px 20px;
+    cursor:pointer;
+}
+
+.edit:hover{
+    transform:scale(1.05);
+}
+
+
+.status{
+    margin-top:12px;
+    padding:8px 18px;
+    border-radius:20px;
+    font-weight: 500;
+    display:inline-block;
+    font-size: 14px;
+}
+
+
+.bottom{
+    width:300px;
+    margin:20px auto;
+    text-align:center;
+    background:white;
+    border-radius:20px;
+    padding:10px;
+}
+
+.bottom button{
+    background:#7bc47f;
+    border:none;
+    padding:8px 18px;
+    border-radius:20px;
+    cursor:pointer;
+    font-weight: 500;
+}
+
+.bottom button:hover{
+    transform:scale(1.05);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="top">Manage Your Orders</div>
+
+
+<div class="mid">
+
+<div class="details">
+<p><b>Order Number:</b> ORD-2002</p>
+<p><b>Name:</b> Laxmi Prasanna</p>
+<p><b>Shop:</b> Fresh Mart</p>
+<p><b>Address:</b> 456 Oak Avenue, Sector 2</p>
+<p class="status" style="background:lightgoldenrodyellow;">Status: On the way</p>
+</div>
+
+<div class="actions">
+<button class="navigate">✈ Navigate</button>
+<button class="call">☎ Call</button>
+<button class="edit">Edit</button>
+</div>
+
+</div>
+
+
+<div class="mid">
+
+<div class="details">
+<p><b>Order Number:</b> ORD-2002</p>
+<p><b>Name:</b> Deepak Sharma</p>
+<p><b>Shop:</b> Tech Store</p>
+<p><b>Address:</b> 789 Pine Road, Sector 3</p>
+<p class="status" style="background:lightblue;">Status: Done</p>
+</div>
+
+<div class="actions">
+<button class="navigate">✈ Navigate</button>
+<button class="call">☎ Call</button>
+<button class="edit">Edit</button>
+</div>
+
+</div>
+
+
+<div class="mid">
+
+<div class="details">
+<p><b>Order Number:</b> ORD-2001</p>
+<p><b>Name:</b> Santosh Kumar</p>
+<p><b>Shop:</b> Food Corner</p>
+<p><b>Address:</b> 123 Elm Street, Sector 1</p>
+<p class="status" style="background:lightcoral;">Status: Done</p>
+</div>
+
+<div class="actions">
+<button class="navigate">✈ Navigate</button>
+<button class="call">☎ Call</button>
+<button class="edit">Edit</button>
+</div>
+
+</div>
+
+
+<div class="bottom">
+Orders Received <button>View</button>
+</div>
+
+</body>
+</html>

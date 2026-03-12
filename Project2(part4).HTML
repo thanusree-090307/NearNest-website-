@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+     <head><title>Project-2</title></head>
+     <style>
+        body{
+            margin: 0px;
+        }
+         .page{
+            background-color: #d9e2ef ;
+            font-size: x-large;
+            padding: 5px;
+            text-align: center;
+        }
+        .center span{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 400px;
+            height: 170px;
+            border-radius: 20px;
+            background-color: white;
+            color: black;
+            font-size: 90%;
+            cursor: pointer;
+        }
+        .hover{
+            text-align: center;
+            transition: transform 0.5s ease;
+        }
+        .hover:hover{
+           transform: scale(1.1);
+           border: 2px solid rgb(98, 98, 226);
+        }
+        .image{
+            border-radius: 20px;
+            width: 60px;
+            height: 60px;
+        }
+     </style>
+     <body>
+        <div class="page">
+            <h3 id="welcome" style="margin-top: 10px; margin-bottom: 0px;"></h3>
+     <script>
+         document.getElementById("welcome").innerHTML = "Welcome to the Dashboard!";
+    </script>
+        <p><b>Select Your Role</b></p>
+        <p style="color: gray;">Manage your shop and products</p>
+        <center><div class="center">
+           <a href="Project2(part5).HTML" style="text-decoration: none; color: black;"> <span class="hover">
+                <img class="image" src="Shopkeeper logo.png">
+                <p>Shopkeeper</p>
+                <t style="color: gray;">Manage your shop and products</t>
+            </span><br></a>
+            <a href="Project2(part8).HTML" style="text-decoration: none; color: black;"><span class="hover">
+                <img class="image" src="Delivery Agent logo.png">
+                <p>Delivery Agent</p>
+                <t style="color: gray;">Handel deliveries and orders</t>
+            </span><br></a>
+            <a href="Project2(part10).HTML" style="text-decoration: none; color: black;"><span class="hover">
+                <img class="image" src="Customer.png">
+                <p>Customer</p>
+                <t style="color: gray;">Browse and shop from nearby stores</t>
+            </span><br></a>
+        </div></center>
+        </div>
+     </body>
+</html>
